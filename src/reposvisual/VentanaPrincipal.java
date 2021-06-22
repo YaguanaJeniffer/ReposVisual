@@ -20,7 +20,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         initComponents();
     }
     public void saludar(){
-        JOptionPane.showMessageDialog(null, "Hola con todos esto es un saludo");
+        JOptionPane.showMessageDialog(null, "buenas ya llego el pan :v");
     }
 
     /**
