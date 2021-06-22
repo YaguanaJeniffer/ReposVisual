@@ -5,6 +5,8 @@
  */
 package reposvisual;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author windows
@@ -16,6 +18,9 @@ public class VentanaPrincipal extends javax.swing.JFrame {
      */
     public VentanaPrincipal() {
         initComponents();
+    }
+    public void saludar(){
+        JOptionPane.showMessageDialog(null, "Hola con todos esto es un saludo");
     }
 
     /**
@@ -32,6 +37,11 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jBtnJonathan.setText("Jonathan");
+        jBtnJonathan.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtnJonathanActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -52,6 +62,10 @@ public class VentanaPrincipal extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jBtnJonathanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnJonathanActionPerformed
+        saludar();
+    }//GEN-LAST:event_jBtnJonathanActionPerformed
 
     /**
      * @param args the command line arguments
